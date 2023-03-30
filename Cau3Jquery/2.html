@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>HD test</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script>
+        $(document).ready(function() {
+
+            for (var i = 1; i <= 100; i++) {
+                var numBox = $('<div>', {
+                    class: 'box',
+                    text: i,
+                });
+
+
+                numBox.click(function() {
+                    var num = parseInt($(this).text());
+                    if (num % 2 == 0) {
+                        alert(num + ' là số chẵn');
+                    } else {
+                        alert(num + ' là số lẻ');
+                    }
+                });
+
+                $('#container').append(numBox);
+            }
+        });
+    </script>
+</body>
+
+</html>

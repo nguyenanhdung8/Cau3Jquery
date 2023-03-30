@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Card hiển thị thông tin cá nhân</title>
+    <style>
+        .card {
+            transition: 0.3s;
+            width: 300px;
+            border-radius: 10px;
+            background-color: antiquewhite;
+        }
+        
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .container {
+            padding: 2px 16px;
+            margin-left: 15%;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            overflow: hidden;
+            border-radius: 50%;
+            margin-left: 24%;
+        }
+        
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="profile-pic">
+            <img src="abc.png" alt="Avatar">
+        </div>
+        <div class="container">
+            <h4><b>Nguyễn Văn A</b></h4>
+            <p>Ngày sinh: </p>
+            <p>Số điện thoại: </p>
+            <p>Email: </p>
+        </div>
+    </div>
+</body>
+
+</html>
